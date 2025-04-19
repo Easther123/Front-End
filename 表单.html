@@ -1,0 +1,39 @@
+<!--
+ * @Author: Esther 299017@qq.com
+ * @Date: 2024-02-28 15:43:01
+ * @LastEditors: Esther 299017@qq.com
+ * @LastEditTime: 2024-02-28 16:01:56
+ * @FilePath: \前端练习\表单.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单</title>
+</head>
+<body>
+  <form action="#">
+    <!-- action="#"表示下面提交到哪个地方，“后端提供一个API”  #占位，没有要发送的地方 -->
+    <label >用户名：</label>
+    <input type="text" placeholder="请输入内容">
+    <br>
+    <label for="pwd" >密 码 ：</label>
+    <input type="password" placeholder="请输入内容">
+
+    <!-- type="password"隐藏密码设置 -->
+    <br>
+
+    <label >性别</label>
+    <input type="radio" name="gender"> 男
+    <input type="radio" name="gender"> 女
+    <input type="radio" name="gender"> 其他
+
+    <!-- name属性，实现单选的效果 -->
+
+    <input type="submit" value="上传">
+    <!-- value可以不写 -->
+  </form>
+</body>
+</html>

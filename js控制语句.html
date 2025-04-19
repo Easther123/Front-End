@@ -1,0 +1,56 @@
+<!--
+ * @Author: Esther 299017@qq.com
+ * @Date: 2024-02-29 21:22:47
+ * @LastEditors: Esther 299017@qq.com
+ * @LastEditTime: 2024-02-29 21:42:02
+ * @FilePath: \前端练习\js控制语句.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js控制语句</title>
+</head>
+<body>
+
+  <script>
+  let age = 3;
+  if(age > 18){
+    console.log("你已经成年了");
+  }else{
+    console.log("未成年人");
+  }
+
+
+  let time = 1;
+  if(time <12){
+    console.log("上午好");
+  }
+
+  for(let i=1;i<=10;i++){
+    console.log(i);
+  }
+
+  let index = 100;
+  while(index<=107){
+    console.log(index);
+    index++;
+  }
+
+  for(var i =0;i<5;i++){
+    if(i == 2){
+      continue;}
+    console.log(i);
+  }
+
+  greet();
+
+  function greet(){
+
+    console.log("hello world");
+  }
+</script>
+</body>
+</html>

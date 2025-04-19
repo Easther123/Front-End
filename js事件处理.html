@@ -1,0 +1,33 @@
+<!--
+ * @Author: Esther 299017@qq.com
+ * @Date: 2024-02-29 21:44:46
+ * @LastEditors: Esther 299017@qq.com
+ * @LastEditTime: 2024-02-29 21:48:19
+ * @FilePath: \前端练习\js事件处理.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js事件处理</title>
+</head>
+<body>
+  <button onclick="click_event()">点击</button>
+  <input type="text" onfocus="focus_event()" onblur="blur_event()">
+  <script>
+    function click_event(){
+      alert("您好像来到了一片没有知识的荒原");
+    }
+
+    function focus_event(){
+      alert("获取焦点");
+    }
+
+    function blur_event(){
+      alert("失去焦点");
+    }
+  </script>
+</body>
+</html>

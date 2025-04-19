@@ -1,0 +1,67 @@
+<!--
+ * @Author: Esther 299017@qq.com
+ * @Date: 2024-02-29 13:04:11
+ * @LastEditors: Esther 299017@qq.com
+ * @LastEditTime: 2024-02-29 13:29:30
+ * @FilePath: \前端练习\css类的常见属性.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css类常见属性</title>
+
+  <style>
+    /* 块级元素 */
+    .block{
+      background-color: antiquewhite;
+      width: 200px;
+      height: 100px;
+    }
+    /* 块级元素复制的话在下一行出现 */
+
+    /* 行内元素 */
+    .inline{
+      background-color: aquamarine;
+    }
+    /* 行内元素无法设置宽度和高度，大小由所包含内容决定 */
+    /* 行内元素复制的话并排同行出现 */
+
+    /* 行内块元素 */
+    .inline-block{
+      width: 100px;
+      height: 80px;
+    }
+    /* 行内块元素复制的话并排同行出现 */
+
+    .div-inline{
+      display: inline-block;
+      background-color: aquamarine;
+    }
+
+    .span-inline-block{
+      display:inline-block;
+      background-color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <!-- 复合属性 -->
+  <h1 style="font: bolder 50px 'kaiti'">这是一个font复合属性示例</h1>
+
+  <!-- 设置行高 -->
+  <p style="line-height: 40px;">这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本</p>
+
+
+  <div class="block">这是一个块级元素</div>
+  <span class="inline">这是一个行内元素</span>
+   <img src="我们都在努力奔跑，我们都是追梦人.JPG" alt="" class="inline-block"><!--行内块元素 -->
+
+   <h2>display</h2>
+   <div class="div-inline">这是一个转换成行内元素的div标签</div>
+
+  <span class="span-inline-block">这是一个转换成行内块元素的span标签</span>
+</body>
+</html>

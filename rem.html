@@ -1,0 +1,53 @@
+<!--
+ * @Author: Esther 299017@qq.com
+ * @Date: 2024-02-29 22:01:11
+ * @LastEditors: Esther 299017@qq.com
+ * @LastEditTime: 2024-02-29 22:13:10
+ * @FilePath: \前端练习\rem.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rem</title>
+
+  <style>
+    /* html{
+      font-size: 20px;
+    } */
+
+    .box-px{
+      width: 200px;
+      height: 100px;
+      background-color: aqua;
+    }
+
+    .box-rem{
+      width: 5rem;
+      height: 1rem;
+      background-color: rgb(24, 133, 60);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box-px"></div>
+  <br>
+  <div class="box-rem"></div>
+
+  <script>
+    //根据设备宽度计算html标签的font-size值,设置为设备宽度的1/10
+    function size(){
+      document.documentElement.style.fontSize = screen.width/10 +"px";
+    }
+
+    size();
+
+    //绑定事件，改变屏幕尺寸触发size()
+    window.onresize = size;
+  </script>
+  
+</body>
+</html>

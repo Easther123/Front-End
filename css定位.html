@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css定位</title>
+
+  <style>
+    .box{
+      width: 800px;
+      height: 400px;
+      background-color: aqua;
+    }
+
+    .box-normal{
+      width: 100px;
+      height: 100px;
+      background-color: rgb(242, 191, 219);
+    }
+
+    .box-relitive{
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      position: relative;
+      left:100px;
+      top: 100px;
+      
+    }
+
+    .box2{
+      width: 800px;
+      height: 400px;
+      background-color: rgb(191, 255, 0);
+      
+    }
+
+    .box-absolute{
+      width: 100px;
+      height: 100px;
+      background-color: blueviolet;
+      position: absolute;
+    }
+
+    
+
+    .box-fixed{
+      width: 100px;
+      height: 100px;
+      background-color: rgb(13, 16, 16);
+      position: fixed;
+      right: 0;
+      top: 300px;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>相对定位示例</h1>
+  <div class="box">
+    <div class="box-normal">正常定位</div>
+    <div class="box-relitive">相对定位</div>
+    <div class="box-normal">正常定位</div>
+  </div> 
+    
+  <div>
+    <h1>绝对定位示例</h1>
+    <div class="box2">
+    <div class="box-normal">正常定位</div>
+    <div class="box-absolute">相对定位</div>
+    <div class="box-normal">正常定位</div>
+  </div>
+
+  <div>
+    <h1>固定定位示例</h1>
+    <div class="box-fixed"></div>
+    
+    <!-- 固定定位即使浏览器窗口滚动，盒子位置也不变 -->
+  </div>
+
+</body>
+</html>
